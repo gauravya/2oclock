@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'MedievalSharp', sans-serif;
+    background-color: #EFF3ED;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+h1 {
+    font-size: 28px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.essay-list {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.essay-item {
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.happening-message {
+    margin-top: 30px;
+    font-size: 20px;
+    text-align: center;
+    width: 90vw;
+    height: auto;
+    overflow: hidden; 
+    word-break: break-word;
+}
