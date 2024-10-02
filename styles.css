@@ -16,14 +16,17 @@ body {
 }
 
 .logo {
-    width: 150px;
+    width: 180px;
     height: auto;
+    margin-bottom: 20px;
 }
 
 h1 {
-    font-size: 28px;
+    font-size: 36px;
     margin-top: 20px;
     text-align: center;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
 }
 
 .essay-list {
@@ -34,7 +37,7 @@ h1 {
 }
 
 .essay-item {
-    font-size: 20px;
+    font-size: 22px;
     margin: 10px 0;
     text-align: center;
 }
@@ -47,4 +50,110 @@ h1 {
     height: auto;
     overflow: hidden; 
     word-break: break-word;
+}
+
+h2.blog-title {
+    font-family: 'MedievalSharp', serif;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header img {
+    width: 180px;
+    height: auto;
+    max-width: 100%;
+}
+
+.author-info {
+    font-family: 'MedievalSharp', serif;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.hr {
+    border: none;
+    border-top: 1px solid #333;
+    margin: 5px auto 30px auto;
+    width: 90%;
+}
+
+.blog-content {
+    font-family: 'Georgia', serif;
+    font-size: 22px;
+    color: #333;
+    text-align: justify;
+    line-height: 1.5;
+    width: 55%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.blog-content p {
+    margin-bottom: 20px; 
+}
+
+.blog-content p:first-of-type::first-letter {
+    font-family: 'MedievalSharp', serif;
+    font-size: 48px;
+    float: left;
+    margin-right: 15px;
+    line-height: 1;
+    color: #333;
+}
+
+blockquote {
+    background-color: #f0f0f0; 
+    border-left: 5px solid black; 
+    padding: 10px 20px; 
+    color: #000; 
+    font-style: italic; 
+    margin: 20px 0; 
+}
+
+
+
+@media (max-width: 768px) {
+    h1, h2.blog-title {
+        font-size: 32px;
+    }
+    
+    .author-info {
+        font-size: 16px;
+    }
+
+    .blog-content {
+        font-size: 18px;
+        width: 90%; /* Full width on smaller screens */
+    }
+
+    .blog-content p:first-of-type::first-letter {
+        font-size: 36px; /* Smaller drop cap on mobile */
+    }
+}
+
+
+@media (max-width: 480px) {
+    h1, h2.blog-title {
+        font-size: 28px;
+    }
+    
+    .author-info {
+        font-size: 14px;
+    }
+
+    .blog-content {
+        font-size: 16px;
+    }
+
+    .blog-content p:first-of-type::first-letter {
+        font-size: 32px;
+    }
 }
